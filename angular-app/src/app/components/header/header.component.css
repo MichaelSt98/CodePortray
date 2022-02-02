@@ -1,0 +1,24 @@
+.menu-icon {
+  font-size: 2.5em;
+  cursor: pointer;
+  color: #000000;
+}
+
+.header-menu {
+  float: left;
+  /*display: inline-block;*/
+  margin: 0;
+  padding: 0;
+}
+.header-shortcuts {
+  float: right;
+  /*display: inline-block;*/
+  margin: 0;
+  padding: 0;
+  /*background: black;*/
+}
+
+.header-shortcuts .mat-mini-fab {
+  background-color: #8c8c8c;
+  margin: 3px;
+}

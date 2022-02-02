@@ -1,0 +1,54 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+header {
+  position: sticky;
+  top: 1px;
+  padding: 17px;
+  background: #FFFFFF;
+  height: inherit;
+  float: top;
+  overflow: hidden;
+}
+
+button.mat-button .mat-icon,
+a.mat-button .mat-icon,
+a.mat-raised-button .mat-icon,
+a.mat-flat-button .mat-icon,
+a.mat-stroked-button .mat-icon {
+  vertical-align: top;
+  font-size: 1.25em;
+  background: black;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: inline-block; /*flex;*/
+  position: relative; /*absolute;*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+.app-page {
+  padding: 32px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.white-icon {
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+/* Note: If you're using an SVG icon, you should make the class target the `<svg>` element */
+.white-icon svg {
+  fill: #000000;
+}
