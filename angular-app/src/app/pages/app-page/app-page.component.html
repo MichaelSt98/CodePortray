@@ -1,5 +1,27 @@
 <div class="apps-page app-page">
   <h1>Apps Page</h1>
+  <!-- loaded from remote url -->
+  <markdown ngPreserveWhitespaces>
+    # Markdown
+
+    > test
+
+    * elem 1
+    * elem 2
+      * nested
+
+    `test`
+
+    ```python
+    import numpy as np
+
+    def test():
+      return 1 + 2
+    ```
+  </markdown>
+
+  <markdown [src]="'markdown-files/sample.md'"></markdown>
+
   <mat-icon aria-label="Example home icon">info</mat-icon>
   <div>This is where apps content will be displayed.</div>
   <div>This is where apps content will be displayed.</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -9,13 +9,23 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class HeaderComponent implements OnInit {
 
+  //@ViewChild("toggle") public toggleRef: ElementRef<HTMLElement> | undefined;
+
   constructor(private navService: NavigationService) { }
 
   ngOnInit(): void {
+
   }
 
-  toggleSideNav() {
-    this.navService.setShowNav(true);
-  }
+  //@Input()
+  //getToggleRef() : ElementRef<HTMLElement> | undefined {
+  //  return this.toggleRef;
+  //}
+
+  //@Input()
+  //toggleSideNav() {
+  //  console.log("toggle side nav...");
+  //  this.navService.setShowNav(true);
+  //}
 
 }

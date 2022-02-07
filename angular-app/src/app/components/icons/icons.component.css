@@ -1,0 +1,55 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: black;
+}
+
+/* Style all font awesome icons
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+*/
+
+/*Gitlab
+.fa-gitlab {
+  background: #AE3F2F;
+  color: white;
+}
+*/
+
+/* Facebook
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+*/

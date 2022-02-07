@@ -4,15 +4,37 @@
   [navWidth]="280"
   [duration]="0.5">
   <app-side-nav-content></app-side-nav-content>
+  <a class="nav-link" routerLink="/blog">blog</a>
   <div> test </div>
   <div> another test </div>
 </app-side-nav>
 
 <div class="main-container">
-  <app-header></app-header>
+
+  <app-header>
+    <app-hamburger menu></app-hamburger>
+    <div shortcuts>
+      <app-icon url="https://www.google.com" icon="facebook" color="white" background="#3B5998"></app-icon>
+      <app-icon url="https://www.google.com" icon="twitter" color="white" background="#55ACEE"></app-icon>
+      <app-icon url="https://www.google.com" icon="youtube" color="white" background="#DB0000"></app-icon>
+      <app-icon url="https://www.google.com" icon="linkedin" color="white" background="#3B67BE"></app-icon>
+      <app-icon url="https://www.google.com" icon="share-alt" color="white" background="darkgrey"></app-icon>
+      <app-icon url="https://www.google.com" icon="github" color="white" background="#2A2D32"></app-icon>
+      <app-icon url="https://www.google.com" icon="university" color="white" background="#8D2439"></app-icon>
+      <app-icon url="https://www.google.com" icon="wikipedia-w" color="black" background="lightgrey"></app-icon>
+      <app-icon url="https://www.google.com" icon="slack" color="white" background="#421B4B"></app-icon>
+      <app-icon url="https://www.google.com" icon="home" color="white" background="black"></app-icon>
+      <app-icon url="https://www.google.com" icon="cogs" color="white" background="black"></app-icon>
+      <app-icon url="https://www.google.com" icon="bars" color="white" background="black"></app-icon>
+      <app-icon url="https://www.google.com" icon="code" color="white" background="black"></app-icon>
+      <app-icon url="https://www.google.com" icon="terminal" color="white" background="black"></app-icon>
+    </div>
+  </app-header>
+
   <section>
     <router-outlet></router-outlet>
   </section>
+
 </div>
 
 <!--

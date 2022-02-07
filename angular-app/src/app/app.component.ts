@@ -11,4 +11,5 @@ export class AppComponent {
   title = 'angular app';
   //sideNavDirection = SideNavDirection.Left;
   SideNavDirection = SideNavDirection;
+
 }

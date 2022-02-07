@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="entry-list">
+    <ul>
+      <li *ngFor="let entry of entries">
+        <!--
+        {{ entry.date | date: 'YYYY LLL MM' }}:
+        <a routerLink="/blog/{{ entry.slug }}">{{ entry.title }}</a>
+        -->
+        <div class="coarse-blog-entry">
+        <div class="blog-entry">
+          <div class="blog-info">
+            <div class="blog-title">
+              <a routerLink="/blog/{{ entry.slug }}">{{ entry.title }}</a>
+            </div>
+            <div>
+              <div>
+              {{ entry.date | date: 'YYYY LLL MM' }}
+              </div>
+              <div>
+                <a class="fa fa-{{downloadIcon}}" download="{{entry.slug}}.md" target="_blank" href="/markdown-files/{{entry.slug}}/{{entry.slug}}.md"></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-description">
+            {{ entry.description }}
+          </div>
+        </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

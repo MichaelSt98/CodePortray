@@ -26,6 +26,11 @@ const routes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
+  },
+  { // lazy load the blog component
+    path: 'blog',
+    loadChildren: () =>
+      import('./blog/blog.module').then((m) => m.BlogModule),
   }
 ];
 

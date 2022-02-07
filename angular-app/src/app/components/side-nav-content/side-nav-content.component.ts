@@ -12,7 +12,8 @@ export class SideNavContentComponent implements OnInit {
   navItems = [
     { label: 'Apps', route: '/apps'},
     { label: 'Portfolio', route: '/portfolio'},
-    { label: 'Services', route: '/services'}
+    { label: 'Services', route: '/services'},
+    { label: 'Blog', route: '/blog'}
   ];
 
   constructor(private router: Router) { }

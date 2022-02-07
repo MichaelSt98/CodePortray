@@ -6,12 +6,14 @@
 
 .header-menu {
   float: left;
+  /*width: 60%;*/
   /*display: inline-block;*/
   margin: 0;
   padding: 0;
 }
 .header-shortcuts {
   float: right;
+  /*width: 40%;*/
   /*display: inline-block;*/
   margin: 0;
   padding: 0;
