@@ -1,0 +1,18 @@
+<!--
+<div style="background: #2b2b2b; color: white; width: 100px; overflow-x: auto; white-space: nowrap">test test test test test test</div>
+-->
+<!--[cdkCopyToClipboard]-->
+
+<div class="container" [style.width]="width">
+<div class="input" [style.background]="background" [style.height]="height" [style.line-height]="height">{{displayText}}</div><div class="copy-input" (click)="copy()"><ng-content select="[button]"></ng-content></div>
+  <ng-content></ng-content>
+</div>
+<!--
+<span [ngxClipboard]="copyId">Copy</span>
+-->
+<!--
+<ngx-copy-to-clipboard target="#text-content">
+  Copy
+</ngx-copy-to-clipboard>
+-->
+

@@ -1,0 +1,11 @@
+<span (click)="openModal(modal)"><ng-content select="[open]"></ng-content></span>
+
+<ng-template #modal>
+    <div class="header"><span mat-dialog-close id='close'>x</span></div>
+    <ng-content></ng-content>
+    <!--
+    <div mat-dialog-actions>
+      <button mat-dialog-close>Close</button>
+    </div>
+    -->
+</ng-template>

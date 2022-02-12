@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  padding: 10px;
+}
+
+.input {
+  /*background: #FFFFFF;*/
+  color: black;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: 1px solid black;
+  /*margin: 2px;*/
+  /*display: inline-block;*/
+  flex: 1;
+  float: left;
+  text-align: center;
+}
+
+/*.copy-input {
+  float: left;
+}*/

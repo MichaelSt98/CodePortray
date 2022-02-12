@@ -13,7 +13,8 @@ export class IconsComponent implements OnInit {
   @Input() color: string = "#FFFFFF";
   @Input() background: string = '#000000';
   @Input() icon: string = "";
-  @Input() url: string = "";
+  @Input() size: string = "20px";
+  //@Input() url: string = "";
 
   ngOnInit(): void {
 

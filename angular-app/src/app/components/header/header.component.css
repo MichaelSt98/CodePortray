@@ -1,3 +1,9 @@
+header {
+  position: sticky; top: 0; /*position: fixed;*/
+  background: white;
+  /*z-index:1000;*/
+}
+
 .menu-icon {
   font-size: 2.5em;
   cursor: pointer;
@@ -11,6 +17,7 @@
   margin: 0;
   padding: 0;
 }
+
 .header-shortcuts {
   float: right;
   /*width: 40%;*/

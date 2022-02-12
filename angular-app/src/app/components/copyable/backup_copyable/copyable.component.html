@@ -1,0 +1,7 @@
+<!--
+<div style="background: #2b2b2b; color: white; width: 100px; overflow-x: auto; white-space: nowrap">test test test test test test</div>
+-->
+
+<div class="copyable">
+  <div class="input" [style.width]="width">{{text}}</div><span (click)="copyText()"><ng-content select="[button]"></ng-content></span>
+</div>

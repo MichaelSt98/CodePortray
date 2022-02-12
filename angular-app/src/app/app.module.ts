@@ -19,6 +19,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { MarkdownComponent } from './components/markdown/markdown.component';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { SecurityContext } from '@angular/core';
+import { FooterComponent } from './components/footer/footer.component';
+//import { ClipboardModule } from 'ngx-clipboard';
 //import { EntryListComponent } from './blog/blog-entries/blog-entries.component';
 //import { PostComponent } from './blog/post/post.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -36,7 +38,8 @@ import { SecurityContext } from '@angular/core';
     PortfolioPageComponent,
     ServicesPageComponent,
     CustomListComponent,
-    MarkdownComponent
+    MarkdownComponent,
+    FooterComponent,
     //EntryListComponent,
     //PostComponent
   ],
@@ -48,6 +51,7 @@ import { SecurityContext } from '@angular/core';
     BrowserAnimationsModule,
     MatButtonModule,
     HttpClientModule,
+    //ClipboardModule,
     //BlogModule,
     MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
     // FontAwesomeModule

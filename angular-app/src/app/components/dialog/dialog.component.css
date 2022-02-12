@@ -1,0 +1,20 @@
+#close {
+  float:right;
+  display:inline-block;
+  padding:2px 5px;
+  /*background:#ccc;*/
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#close:hover {
+  /*float:right;
+  display:inline-block;*/
+  padding:2px 5px;
+  background: #cccccc;
+  /*color:#fff;*/
+}
