@@ -37,7 +37,7 @@ HeaderComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1__
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](5, 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } }, styles: [".menu-icon {\n  font-size: 2.5em;\n  cursor: pointer;\n  color: #000000;\n}\n\n.header-menu {\n  float: left;\n  /*width: 60%;*/\n  /*display: inline-block;*/\n  margin: 0;\n  padding: 0;\n}\n\n.header-shortcuts {\n  float: right;\n  /*width: 40%;*/\n  /*display: inline-block;*/\n  margin: 0;\n  padding: 0;\n  /*background: black;*/\n}\n\n.header-shortcuts .mat-mini-fab {\n  background-color: #8c8c8c;\n  margin: 3px;\n}\n"], encapsulation: 2 });
+    } }, styles: ["header {\n  position: sticky; top: 0; /*position: fixed;*/\n  background: white;\n  /*z-index:1000;*/\n}\n\n.menu-icon {\n  font-size: 2.5em;\n  cursor: pointer;\n  color: #000000;\n}\n\n.header-menu {\n  float: left;\n  /*width: 60%;*/\n  /*display: inline-block;*/\n  margin: 0;\n  padding: 0;\n}\n\n.header-shortcuts {\n  float: right;\n  /*width: 40%;*/\n  /*display: inline-block;*/\n  margin: 0;\n  padding: 0;\n  /*background: black;*/\n}\n\n.header-shortcuts .mat-mini-fab {\n  background-color: #8c8c8c;\n  margin: 3px;\n}\n"], encapsulation: 2 });
 
 
 /***/ }),

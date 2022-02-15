@@ -1,11 +1,49 @@
-<span (click)="openModal(modal)"><ng-content select="[open]"></ng-content></span>
+<!--<span (click)="openModal(modal)"><ng-content select="[open]"></ng-content></span>
 
 <ng-template #modal>
     <div class="header"><span mat-dialog-close id='close'>x</span></div>
     <ng-content></ng-content>
-    <!--
-    <div mat-dialog-actions>
-      <button mat-dialog-close>Close</button>
-    </div>
-    -->
 </ng-template>
+-->
+<!--
+mdl-button-type="icon"
+mdl-ripple
+-->
+
+
+<span (click)="showModal=!showModal"><ng-content select="[open]"></ng-content></span>
+
+<!--
+<sq-modal [(show)]="showModal">
+  <div sq-modal-title>
+    <strong>Modal title</strong>
+  </div>
+
+  <div sq-modal-body>
+    <ng-content></ng-content>
+  </div>
+
+  <div sq-modal-footer>
+    This is the footer
+  </div>
+</sq-modal>
+-->
+
+<!-- Adding a template reference -->
+
+<div class="sq">
+
+<sq-modal [(show)]="showModal" id="sqModal">
+  <div sq-modal-title>
+    <ng-content select="[title]"></ng-content>
+  </div>
+
+  <div sq-modal-body>
+    <ng-content></ng-content>
+  </div>
+
+  <div sq-modal-footer>
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</sq-modal>
+</div>

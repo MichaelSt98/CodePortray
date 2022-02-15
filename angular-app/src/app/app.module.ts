@@ -20,6 +20,9 @@ import { MarkdownComponent } from './components/markdown/markdown.component';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { SecurityContext } from '@angular/core';
 import { FooterComponent } from './components/footer/footer.component';
+import { NgSqCommonModule } from '@sq-ui/ng-sq-common';
+import { NgModalModule } from '@sq-ui/ng-modal';
+import { DialogComponent } from './components/dialog/dialog.component';
 //import { ClipboardModule } from 'ngx-clipboard';
 //import { EntryListComponent } from './blog/blog-entries/blog-entries.component';
 //import { PostComponent } from './blog/post/post.component';
@@ -40,6 +43,7 @@ import { FooterComponent } from './components/footer/footer.component';
     CustomListComponent,
     MarkdownComponent,
     FooterComponent,
+    DialogComponent,
     //EntryListComponent,
     //PostComponent
   ],
@@ -51,6 +55,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     MatButtonModule,
     HttpClientModule,
+    NgSqCommonModule,
+    NgModalModule,
     //ClipboardModule,
     //BlogModule,
     MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),

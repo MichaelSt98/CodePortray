@@ -13,9 +13,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 5000);
 
-const _c0 = ["*"];
+const _c0 = [[["", "first", ""]], [["", "second", ""]], [["", "third", ""]], "*"];
+const _c1 = ["[first]", "[second]", "[third]", "*"];
 class FooterComponent {
-    constructor() { }
+    constructor() {
+        this.color = "#FFFFFF";
+        this.background = '#000000';
+    }
     ngOnInit() {
     }
     scrollToTop() {
@@ -29,15 +33,29 @@ class FooterComponent {
     }
 }
 FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || FooterComponent)(); };
-FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], ngContentSelectors: _c0, decls: 3, vars: 0, consts: [[1, "footer-component"], ["id", "go-to-top", 1, "fa", "fa-arrow-up", 3, "click"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+FooterComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], inputs: { color: "color", background: "background" }, ngContentSelectors: _c1, decls: 10, vars: 4, consts: [[1, "footer-component"], ["id", "go-to-top", 1, "fa", "fa-arrow-up", 3, "click"], [1, "footer-row"], [1, "footer-column"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function FooterComponent_Template_div_click_1_listener() { return ctx.scrollToTop(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["/*.menu-icon {\n  font-size: 2.5em;\n  cursor: pointer;\n  color: #000000;\n}\n\n.header-shortcuts {\n  float: right;\n  margin: 0;\n  padding: 0;\n}\n\n.header-shortcuts .mat-mini-fab {\n  background-color: #8c8c8c;\n  margin: 3px;\n}*/\n\ndiv#go-to-top {\n  text-align: center;\n  height: 20px;\n  width: 100%;\n  background: black;\n  color: white;\n}\n"], encapsulation: 2 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](6, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](8, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](9, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background-color", ctx.background)("color", ctx.color);
+    } }, styles: [".footer-row {\n  width: 90%;\n  margin: 0 auto;\n}\n\n.footer-column {\n  float: left;\n  width: 33.33%;\n  /*text-align: center;*/\n  /*padding: 10px;*/\n}\n\n/* Clear floats after the columns */\n\n.footer-component.footer-row:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n@media screen and (max-width: 600px) {\n  .footer-column {\n    width: 100%;\n  }\n}\n\ndiv#go-to-top {\n  text-align: center;\n  height: 20px;\n  width: 100%;\n  /*background: black;\n  color: white;*/\n}\n"], encapsulation: 2 });
 
 
 /***/ }),

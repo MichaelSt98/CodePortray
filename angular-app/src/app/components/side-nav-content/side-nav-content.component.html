@@ -1,5 +1,54 @@
+
+<!--
 <div class="side-nav-bar-content">
     <ul class="side-nav-bar-menu">
-        <li *ngFor="let navItem of navItems" (click)="onNavigationSelection(navItem)">{{ navItem.label }}</li>
+      <li class="side-nav-bar-element-list" *ngFor="let navItem of navItems">
+        <div class="side-nav-bar-element">
+        <div class="side-nav-bar-element-content" (click)="onNavigationSelection(navItem)">
+            <div class="side-nav-bar-element-icon"><app-icon icon="{{navItem.icon}}" background="black" color="white"></app-icon></div>
+            <div class="side-nav-bar-element-label">{{ navItem.label }}</div>
+        </div>
+        <div class="side-nav-bar-element-expand" (click)="navItem.showSubMenu=!navItem.showSubMenu" *ngIf="navItem.children && navItem.children.length">
+          <div *ngIf="navItem.showSubMenu; else elseBlock"><app-icon icon="minus-square-o" background="white" color="black"></app-icon></div>
+          <ng-template #elseBlock><app-icon icon="plus-square-o" background="white" color="black"></app-icon></ng-template>
+        </div>
+        </div>
+        <ul class="side-nav-bar-submenu" *ngIf="navItem.children && navItem.children.length && navItem.showSubMenu">
+          <li class="side-nav-bar-element-list" *ngFor="let navItemChild of navItem.children">
+            <div class="side-nav-bar-element" (click)="onNavigationSelection(navItemChild)">
+              <div class="side-nav-bar-element-icon"><app-icon icon="{{navItemChild.icon}}" background="black" color="white"></app-icon></div>
+              <div class="side-nav-bar-element-label">{{ navItemChild.label }}</div>
+            </div>
+          </li>
+        </ul>
+      </li>
     </ul>
+</div>
+-->
+
+<div class="side-nav-bar-content">
+  <ul class="side-nav-bar-menu">
+    <li *ngFor="let navItem of navItems">
+      <div class="side-nav-bar-element">
+        <div class="side-nav-bar-element-content" (click)="onNavigationSelection(navItem)">
+          <div class="side-nav-bar-element-icon"><app-icon icon="{{navItem.icon}}" background="black" color="white"></app-icon></div>
+          <div class="side-nav-bar-element-label">{{ navItem.label }}</div>
+        </div>
+        <div class="side-nav-bar-element-expand" (click)="navItem.showSubMenu=!navItem.showSubMenu" *ngIf="navItem.children && navItem.children.length">
+          <div *ngIf="navItem.showSubMenu; else elseBlock"><app-icon icon="minus-square-o" background="none" color="black"></app-icon></div>
+          <ng-template #elseBlock><app-icon icon="plus-square-o" background="none" color="black"></app-icon></ng-template>
+        </div>
+      </div>
+      <div class="side-nav-bar-submenu-div">
+        <ul class="side-nav-bar-submenu" *ngIf="navItem.children && navItem.children.length && navItem.showSubMenu">
+          <li class="side-nav-bar-element-list" *ngFor="let navItemChild of navItem.children">
+            <div class="side-nav-bar-element" (click)="onNavigationSelection(navItemChild)">
+              <div class="side-nav-bar-element-icon"><app-icon icon="{{navItemChild.icon}}" background="black" color="white" size="10px"></app-icon></div>
+              <div class="side-nav-bar-element-label">{{ navItemChild.label }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
 </div>

@@ -1,5 +1,0 @@
-<map id="BaseIntegrator" name="BaseIntegrator">
-<area shape="rect" id="node1" title=" " alt="" coords="35,5,144,32"/>
-<area shape="rect" id="node2" href="$class_euler.html" title=" " alt="" coords="5,80,59,107"/>
-<area shape="rect" id="node3" href="$class_predictor_corrector.html" title=" " alt="" coords="83,80,213,107"/>
-</map>

@@ -10,6 +10,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-mdl/core": "^13.0.0",
+    "@angular-mdl/popover": "^13.0.0",
     "@angular/animations": "~13.1.0",
     "@angular/cdk": "~13.1.0",
     "@angular/common": "~13.1.0",
@@ -21,6 +23,9 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@sq-ui/ng-modal": "^1.2.2",
+    "@sq-ui/ng-sq-ui": "^1.4.3",
+    "font-awesome": "^4.7.0",
     "lite-server": "^2.6.1",
     "ngx-clipboard": "^15.0.1",
     "ngx-copy-to-clipboard": "^2.3.0",

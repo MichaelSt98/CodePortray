@@ -18,19 +18,19 @@ class IconsComponent {
         this.color = "#FFFFFF";
         this.background = '#000000';
         this.icon = "";
-        this.url = "";
+        this.size = "20px";
     }
+    //@Input() url: string = "";
     ngOnInit() {
     }
 }
 IconsComponent.ɵfac = function IconsComponent_Factory(t) { return new (t || IconsComponent)(); };
-IconsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: IconsComponent, selectors: [["app-icon"]], inputs: { color: "color", background: "background", icon: "icon", url: "url" }, decls: 1, vars: 8, consts: [[3, "href"]], template: function IconsComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "a", 0);
+IconsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: IconsComponent, selectors: [["app-icon"]], inputs: { color: "color", background: "background", icon: "icon", size: "size" }, decls: 1, vars: 13, template: function IconsComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "span");
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMapInterpolate1"]("fa fa-", ctx.icon, "");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background-color", ctx.background)("color", ctx.color);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx.url, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
-    } }, styles: ["@import url(\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\");\n\n.fa {\n  padding: 10px;\n  font-size: 20px;\n  width: 20px;\n  height: 20px;\n  text-align: center;\n  text-decoration: none;\n}\n\n.fa:hover {\n  opacity: 0.7;\n  color: black;\n}\n\n/* Style all font awesome icons\n.fa {\n  padding: 10px;\n  font-size: 10px;\n  width: 20px;\n  height: 20px;\n  text-align: center;\n  text-decoration: none;\n}\n.icon-bar {\n  position: fixed;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n  -ms-transform: translateY(-50%);\n  transform: translateY(-50%);\n}\n.icon-bar a {\n  display: block;\n  text-align: center;\n  padding: 16px;\n  transition: all 0.3s ease;\n  color: white;\n  font-size: 20px;\n}\n*/\n\n/*Gitlab\n.fa-gitlab {\n  background: #AE3F2F;\n  color: white;\n}\n*/\n\n/* Facebook\n.fa-facebook {\n  background: #3B5998;\n  color: white;\n}\n*/\n"], encapsulation: 2 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("background-color", ctx.background)("color", ctx.color)("width", ctx.size)("height", ctx.size)("font-size", ctx.size);
+    } }, styles: ["@import url(\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\");\n\n.fa {\n  padding: 10px;\n  /*font-size: 20px;\n  width: 20px;\n  height: 20px;*/\n  text-align: center;\n  text-decoration: none;\n  display: inline-block;\n}\n\n.fa:hover {\n  opacity: 0.7;\n  color: black;\n}\n\n/* Style all font awesome icons\n.fa {\n  padding: 10px;\n  font-size: 10px;\n  width: 20px;\n  height: 20px;\n  text-align: center;\n  text-decoration: none;\n}\n.icon-bar {\n  position: fixed;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n  -ms-transform: translateY(-50%);\n  transform: translateY(-50%);\n}\n.icon-bar a {\n  display: block;\n  text-align: center;\n  padding: 16px;\n  transition: all 0.3s ease;\n  color: white;\n  font-size: 20px;\n}\n*/\n\n/*Gitlab\n.fa-gitlab {\n  background: #AE3F2F;\n  color: white;\n}\n*/\n\n/* Facebook\n.fa-facebook {\n  background: #3B5998;\n  color: white;\n}\n*/\n"], encapsulation: 2 });
 
 
 /***/ }),

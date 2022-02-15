@@ -9,14 +9,25 @@ import { Router } from '@angular/router';
 })
 export class SideNavContentComponent implements OnInit {
 
+  //showSubMenu = false;
+
   navItems = [
-    { label: 'Apps', route: '/apps'},
-    { label: 'Portfolio', route: '/portfolio'},
-    { label: 'Services', route: '/services'},
-    { label: 'Blog', route: '/blog'}
+    { label: 'Apps', route: '/apps', icon: 'linkedin', showSubMenu: false,
+      children: [ { label: 'Portfolio', route: '../portfolio', icon: 'home'},
+                  { label: 'Services', route: '/services', icon: 'home'},
+                  { label: 'Blog', route: '/blog', icon: 'home'}]},
+    { label: 'Portfolio', route: '/portfolio', icon: 'home', showSubMenu: false,
+      children: [ { label: 'Portfolio', route: '/portfolio', icon: 'home'},
+                  { label: 'Services', route: '/services', icon: 'home'}]},
+    { label: 'Services', route: '/services', icon: 'home'},
+    { label: 'Blog', route: '/blog', icon: 'home'}
   ];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+    //for (let navItem in this.navItems) {
+    //  navItem.showSubMenu = false;
+    //}
+  }
 
   ngOnInit(): void {
   }

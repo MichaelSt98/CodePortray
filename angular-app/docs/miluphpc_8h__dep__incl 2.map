@@ -1,9 +1,0 @@
-<map id="include/miluphpc.h" name="include/miluphpc.h">
-<area shape="rect" id="node1" title="short description" alt="" coords="207,5,338,32"/>
-<area shape="rect" id="node2" href="$explicit__euler_8h.html" title=" " alt="" coords="61,87,183,129"/>
-<area shape="rect" id="node4" href="$src_2main_8cpp.html" title=" " alt="" coords="172,191,269,218"/>
-<area shape="rect" id="node5" href="$predictor__corrector__euler_8h.html" title=" " alt="" coords="259,80,393,136"/>
-<area shape="rect" id="node7" href="$miluphpc_8cpp.html" title=" " alt="" coords="417,95,539,121"/>
-<area shape="rect" id="node3" href="$explicit__euler_8cpp.html" title=" " alt="" coords="5,184,148,225"/>
-<area shape="rect" id="node6" href="$predictor__corrector__euler_8cpp.html" title=" " alt="" coords="294,184,446,225"/>
-</map>
