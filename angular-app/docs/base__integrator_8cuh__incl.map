@@ -1,9 +1,0 @@
-<map id="include/integrator/base_integrator.cuh" name="include/integrator/base_integrator.cuh">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,148,47"/>
-<area shape="rect" id="node2" href="$particles_8cuh.html" title=" " alt="" coords="23,95,131,121"/>
-<area shape="rect" id="node3" href="$parameter_8h.html" title=" " alt="" coords="15,319,109,345"/>
-<area shape="rect" id="node4" href="$cuda__utilities_8cuh.html" title=" " alt="" coords="92,169,280,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="100,244,173,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="197,244,260,271"/>
-<area shape="rect" id="node7" href="$cuda__runtime_8h.html" title=" " alt="" coords="284,244,397,271"/>
-</map>

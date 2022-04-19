@@ -3,9 +3,10 @@
 -->
 <!--[cdkCopyToClipboard]-->
 
+<!-- <ng-content select="[button]"></ng-content> -->
+
 <div class="container" [style.width]="width">
-<div class="input" [style.background]="background" [style.height]="height" [style.line-height]="height">{{displayText}}</div><div class="copy-input" (click)="copy()"><ng-content select="[button]"></ng-content></div>
-  <ng-content></ng-content>
+<div class="input" [style.background]="background" [style.height]="height" [style.line-height]="height">{{displayText}}</div><div class="copy-input" (click)="copy()"><ng-content></ng-content></div>
 </div>
 <!--
 <span [ngxClipboard]="copyId">Copy</span>

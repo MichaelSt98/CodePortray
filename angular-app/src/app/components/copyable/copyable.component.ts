@@ -30,6 +30,7 @@ export class CopyableComponent implements OnInit {
     }, 3000);
     //return this.copyText;
     this.clipboard.copy(this.copyText);
+    console.log("copied...");
   }
 
   //@Input() url: string = "";
