@@ -4,3 +4,5 @@ include: [
     "_*.png",
     "_*.map",
 ]
+
+baseurl: "/CodePortray"
